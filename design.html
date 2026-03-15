@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Plan & Design</title>
+</head>
+
+<body>
+  <div id="topbar"></div>
+  <script>
+    fetch('topbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('topbar').innerHTML = data;
+      });
+  </script>
+  
+</body>

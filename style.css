@@ -1,0 +1,39 @@
+
+h1
+{
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 40px;
+}
+
+h2
+{
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 20px;
+}
+
+html, body
+{
+  height: 100%;
+  margin: 0;
+}
+
+body
+{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background: #2adb5f;
+  background: linear-gradient(29deg,rgba(42, 219, 95, 1) 0%, rgba(122, 255, 147, 1) 38%, rgba(110, 203, 240, 1) 68%, rgb(232, 216, 73) 84%);
+}
+
+.microbit_photo
+{
+  transition: transform 10s  ease-in-out;
+}
+
+.microbit_photo:hover
+{
+  transform: rotate(3600deg);
+}
