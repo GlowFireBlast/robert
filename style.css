@@ -1,4 +1,9 @@
 
+a 
+{
+  color : white;
+}
+
 h1
 {
   text-align: center;
@@ -22,18 +27,80 @@ html, body
 body
 {
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background: #2adb5f;
-  background: linear-gradient(29deg,rgba(42, 219, 95, 1) 0%, rgba(122, 255, 147, 1) 38%, rgba(110, 203, 240, 1) 68%, rgb(232, 216, 73) 84%);
+  background: #aaaaaa;
 }
 
-.microbit_photo
+
+table
 {
-  transition: transform 10s  ease-in-out;
+  border : 2px solid #000000;
+  border-radius : 20px;
+  width : 100%;
+  background : rgba(0,0,0,0.5);
 }
 
-.microbit_photo:hover
+/* This is basically every title bar entry */
+th 
 {
-  transform: rotate(3600deg);
+  color : white;
+  padding : 10px;
+  border : 2px solid #000000;
+  border-radius : 20px;
+  background : rgba(0,0,0,0.5);
+  transition : transform 0.2s;
+}
+
+th:hover
+{
+  background : rgba(0,0,0,0.3);
+  transform: translate(0px, -2px)
+}
+
+.page_box 
+{
+  color : white;
+  display : block;
+  margin-left : 10%;
+  margin-right: 10%;
+  padding : 10px;
+  background : rgba(0,0,0,0.7);
+  border-radius : 20px;
+  border : 2px solid #000000;
+  box-shadow: 5px 5px black;
+}
+
+.sub_box
+{
+  color : white;
+  display : block;
+  margin : 10px;
+  padding : 10px;
+  background : rgba(0,0,0,0.5);
+  border-radius : 20px;
+  border : 2px solid #000000; 
+  box-shadow: 5px 5px black;
+  transition : transform 0.2s;
+}
+
+.sub_box:hover
+{
+  background : rgba(0,0,0,0.3);
+  transform: translate(0px, -5px)
+}
+
+.spinning_image
+{
+  transition : transform 2s  ease-in-out;
+}
+
+.centred_image
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.spinning_image:hover
+{
+  transform : rotate(360deg);
 }
