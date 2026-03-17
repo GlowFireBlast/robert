@@ -2,6 +2,25 @@
 a 
 {
   color : white;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+ul
+{
+  color : white;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+li
+{
+  color : white;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+p
+{
+  color : white;
+  font-family: "Lexend Deca", sans-serif;
 }
 
 h1
@@ -16,6 +35,11 @@ h2
   text-align: center;
   font-family: "Lexend Deca", sans-serif;
   font-size: 20px;
+}
+
+h3
+{
+  font-family: "Lexend Deca", sans-serif;
 }
 
 html, body

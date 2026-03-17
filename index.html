@@ -10,76 +10,60 @@
 
 <body>
   
-  <!--
-  <div id="topbar"></div>
-  <script>
-    fetch('topbar.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('topbar').innerHTML = data;
-      });
-  </script>
-  -->
-
-  
-
   <h1>Camping Environment Assistant</h1>
   <h2>Leaving Cert - Computer Science Coursework - 2026</h2>
 
 
-  <marquee height="50%" scrollamount="20">
-  
-  <img class="spinning_image" src="Doyle.jpeg" style="height : 20%; border-radius : 50%; filter : hue-rotate(350deg);">
-  <img class="spinning_image" src="Doyle.jpeg" style="height : 20%; border-radius : 50%; filter : hue-rotate(400deg);">
+  </br>
+  <table>
+    <tr>
+      <th><a href="index.html">Meeting the Brief</a></th>
+      <th><a href="investigation.html">Investigation</a></th>
+      <th><a href="design.html">Plan & Design</a></th>
+      <th><a href="create.html">Create</a></th>
+      <th><a href="evaluation.html">Evaluation</a></th>
+      <th><a href="references.html">References</a></th>
+    </tr>
+  </table>
 
-  <img class="spinning_image" src="Doyle.jpeg" style="height : 20%; border-radius : 50%; filter : hue-rotate(50deg);">
-  <img class="spinning_image" src="Doyle.jpeg" style="height : 20%; border-radius : 50%; filter : hue-rotate(100deg);">
-  <img class="spinning_image" src="Doyle.jpeg" style="height : 20%; border-radius : 50%; filter : hue-rotate(150deg);">
-  <img class="spinning_image" src="Doyle.jpeg" style="height : 20%; border-radius : 50%; filter : hue-rotate(200deg);">
-  <img class="spinning_image" src="Doyle.jpeg" style="height : 20%; border-radius : 50%; filter : hue-rotate(250deg);">
-  <img class="spinning_image" src="Doyle.jpeg" style="height : 20%; border-radius : 50%; filter : hue-rotate(300deg);">
-  
-  </marquee>
+  </br>
 
-
-
-
-
-    </br>
-    <table>
-      <tr>
-        <th><a href="index.html">Homepage</a></th>
-        <th><a href="brief.html">Meeting the Brief</a></th>
-        <th><a href="investigation.html">Investigation</a></th>
-        <th><a href="design.html">Plan & Design</a></th>
-        <th><a href="create.html">Create</a></th>
-        <th><a href="evaluation.html">Evaluation</a></th>
-        <th><a href="references.html">References</a></th>
-      </tr>
-    </table>
-
-    </br>
-
-    <img class="spinning_image centred_image" src="micropaul.png" alt="Microbit photo" style="height : 80%">
-
-
+    
     <div class="page_box">
  
-      <h3>Lorem Ipsum</h3>
-      <p>pears go for life!!! please help me find my son</p>
+      <h2>1. Meeting The Brief</h2>
+      <img class="spinning_image" src="micropaul.png" alt="Microbit photo" style="height : 25%; width: 25%; float: right;">
 
+ 
       <div class="sub_box">
-        <h3>subheading thing</h3>
-        <p>yippee</p> 
-        <p>yippee</p> 
-        <p>yippee</p> 
-        <p>yippee</p> 
-        <p>yippee</p> 
+        <h3>Artefact Summary</h3>
+        <ul>
+         <li>My artefact is a "Camping Environment Assistant".</li>
+           <li>My embedded device, a Microbit, upon digital input from button A, collects analog data (Temperature, light level, sound level).
+          This data is logged to a csv file on the device, which can then be processed through my Python programme on a computer.</li> 
+          <li>The device also has a built in compass which upon digital input from button B, displays through the LED display as N, S, E, W
+          respectively.</li>
+          <li>Upon digital input from both buttons A and B, the device displays and "SOS" message on the LED display, and emits a
+          loud sound through the built in speaker.</li>
+          <li>The adaptive Python system processes the data collected by the Microbit, and with user input for their preference,
+          determines and displays the environment with most optimal conditions for camping.</li>
+          <li>The programme considers possible disaster-risk factors (such as high temperatures),
+          and if any are present, displays a warning message to the user.</li>
+          <li>The programme also displays 2 "what-if" scenarios, which show the user how the optimal environment would change
+          if scenarios such as "What if temperatures increase by 5 degrees due to drought conditions?" were to occur.</li>
+      </ul>
       </div>
 
       <div class="sub_box">
-        <h3>subheading thing</h3>
-        <p>yippee</p> 
+        <h3>Video Demonstration</h3>
+        <video src="demonstration.mp4" controls style="height: 30%; width: 30%;"></video>
+      </div>
+
+
+      <div class="sub_box" style="margin : auto";>
+        <center>
+          <a href="investigation.html">Next Page</a>
+        </center>
       </div>
     
     </div>
