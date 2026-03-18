@@ -55,26 +55,28 @@ body
 }
 
 
-table
+.topbar_table
 {
   border : 2px solid #000000;
+  font-family: "Lexend Deca", sans-serif;
   border-radius : 20px;
   width : 100%;
   background : rgba(0,0,0,0.5);
 }
 
 /* This is basically every title bar entry */
-th 
+.topbar_th 
 {
   color : white;
+  font-family: "Lexend Deca", sans-serif;
   padding : 10px;
-  border : 2px solid #000000;
+  border : 0px solid #000000;
   border-radius : 20px;
   background : rgba(0,0,0,0.5);
   transition : transform 0.2s;
 }
 
-th:hover
+.topbar_th:hover
 {
   background : rgba(0,0,0,0.3);
   transform: translate(0px, -2px)
@@ -127,4 +129,50 @@ th:hover
 .spinning_image:hover
 {
   transform : rotate(360deg);
+}
+
+.styled-table,
+.styled-table th,
+.styled-table td
+{
+  font-family: "Lexend Deca", sans-serif;
+  border: 1px solid #000;
+}
+
+.styled-table
+{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  border-radius: 12px;
+  border: 1px solid #000;
+  background: transparent;
+  overflow: hidden;
+}
+
+.styled-table th,
+.styled-table td
+{
+  padding: 0.75rem 1rem;
+  text-align: center;
+}
+
+.styled-table th
+{
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid #000;
+}
+
+td
+{
+  font-family: "Lexend Deca", sans-serif;
+  border: 1px solid;
+  text-align: center;
+}
+
+tr
+{
+  font-family: "Lexend Deca", sans-serif;
+  border: 1px solid;
 }

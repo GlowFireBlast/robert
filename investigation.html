@@ -15,16 +15,21 @@
 
 
   </br>
-  <table>
+
+
+  
+  <table class="topbar_table">
     <tr>
-      <th><a href="index.html">Meeting the Brief</a></th>
-      <th><a href="investigation.html">Investigation</a></th>
-      <th><a href="design.html">Plan & Design</a></th>
-      <th><a href="create.html">Create</a></th>
-      <th><a href="evaluation.html">Evaluation</a></th>
-      <th><a href="references.html">References</a></th>
+      <th class="topbar_th"><a href="index.html">Meeting the Brief</a></th>
+      <th class="topbar_th"><a href="investigation.html">Investigation</a></th>
+      <th class="topbar_th"><a href="design.html">Plan & Design</a></th>
+      <th class="topbar_th"><a href="create.html">Create</a></th>
+      <th class="topbar_th"><a href="evaluation.html">Evaluation</a></th>
+      <th class="topbar_th"><a href="references.html">References/Word Count</a></th>
     </tr>
   </table>
+
+
 
   </br>
 
@@ -33,6 +38,42 @@
  
       <h2>2. Investigation</h2>
 
+    <div class="sub_box">
+      <h3>Research process</h3>
+      <p>Researching the brief, I researched several areas related to forest monitoring and wildlife,
+       which lead me to the idea of creating a camping environment assistant. 
+      This assistant would provide the user with real-time info about their logged surroundings,
+       including weather condition updates, navigation assistance, and safety alerts.</p>
+      <p>Firstly, to investigate the needs of campers and the most crucual features for a camping environment assistant,
+         I undertook several research tactics:</p>
+      <ul>
+        <li>I researched the needs of campers and potential challenges they face while camping, deducing key factors such as 
+        weather conditions, navigation, and safety concerns.</li>
+        <li>I explored existing camping apps and tools, such as "Campy.app" to identify gaps in the market
+         and potential features which could enhance user experience.</li>
+        <li>I conducted surveys and interviews with campers to gain insight into their preferences, 
+        which helped me understand the features they would find most useful in a camping environment assistant.</li>
+        <li>I researched the technologies available for developing such a tool with only school-level resources,
+         such as the Microbit and Python, both of which I would ultimately use for both my embedded system and adaptive system components.</li>
+      </ul>
+      </div>
+<br>
+    <div class="sub_box">
+      <h3>Key decisions informed by research</h3>
+      <ul>
+        <li><b>Theme choice: </b>Camping environment assistant (environmental monitoring scenario),
+        as it links directly to measurable environmental data (temperature, light, sound) and supports
+        safety and awareness in wildlife forestry settings.</li>
+        <li><b>Inputs: </b>Micro:bit sensors (temperature, light level, sound level) used as analog inputs
+         to monitor environmental conditions. Buttons A and B used as digital inputs to trigger data 
+         logging and compass navigation functions.</li>
+        <li><b>Outputs: </b>LED display and built-in speaker used to communicate info. LED shows compass directions,
+         data logging confirmation and SOS messages, while the speaker provides an audible SOS emergency alert.</li>
+        <li><b>Data strategy: </b>collect environmental sensor data using the Micro:bit, log to a CSV file,
+         and process using Python to analyse conditions, consider user preference, and test "what-if" environmental scenarios.</li>
+      </ul>
+      </div>
+<br>
       <div class="sub_box" style="margin : auto";>
         <center>
           <a href="index.html">Prev Page</a>
@@ -41,5 +82,7 @@
       </div>
     
     </div>
+
+
 
 </body>

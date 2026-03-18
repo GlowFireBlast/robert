@@ -15,14 +15,14 @@
 
 
   </br>
-  <table>
+  <table class="topbar_table">
     <tr>
-      <th><a href="index.html">Meeting the Brief</a></th>
-      <th><a href="investigation.html">Investigation</a></th>
-      <th><a href="design.html">Plan & Design</a></th>
-      <th><a href="create.html">Create</a></th>
-      <th><a href="evaluation.html">Evaluation</a></th>
-      <th><a href="references.html">References</a></th>
+      <th class="topbar_th"><a href="index.html">Meeting the Brief</a></th>
+      <th class="topbar_th"><a href="investigation.html">Investigation</a></th>
+      <th class="topbar_th"><a href="design.html">Plan & Design</a></th>
+      <th class="topbar_th"><a href="create.html">Create</a></th>
+      <th class="topbar_th"><a href="evaluation.html">Evaluation</a></th>
+      <th class="topbar_th"><a href="references.html">References/Word Count</a></th>
     </tr>
   </table>
 
@@ -32,7 +32,52 @@
     <div class="page_box">
  
       <h2>3. Plan & Design</h2>
-
+<div class="sub_box">
+  <h3>Design objectives</h3>
+  <ul>
+    <li>Build an embedded system using one or more digital input(s) and one or more analogue input(s), and generating one or more output(s).</li>
+    <li>Collect and store environmental data relevant to camping conditions (temperature, light level, sound level).</li>
+    <li>Monitor environmental conditions and detect potential disaster risks (e.g. high temperature leading to forest fire risk).</li>
+    <li>Build a Python program to process logged data and determine optimal camping conditions.</li>
+    <li>Include "what-if" scenario testing to compare how environmental changes
+     (e.g. temperature increase due to drought conditions) affect camping suitability.</li>
+    <li>Add an adaptive feedback mechanism where the system displays warnings or alerts when unsafe conditions are detected.</li>
+  </ul>
+</div>
+<br>
+<div class="sub_box">
+<h3>Stakeholders and end-user needs</h3>
+<ul>
+  <li><b>Campers/Hikers: </b>need a reliable system to monitor environmental conditions and receive alerts 
+  about potential risks to ensure their safety and enhance their camping experience.</li>
+  <li><b>Outdoor beginners/environmentalists: </b>benefit from guidance on whether based on their preference,
+   the current conditions are suitable for their camping experience.</li>
+  <li><b>Students/researchers: </b>want information logged environmental data to analyse and compare different scenarios.</li>
+</div>
+<br>
+<div class="sub_box">
+<h3>Technologies Used</h3>
+<ul>
+  <li><b>Embedded: </b>Microbit with built-in sensors (temperature, light, sound) and external components (LEDs, buttons).</li>
+  <li><b>Software: </b>Python for data processing, analysis, and user interface development.</li>
+  <li><b>Data Storage: </b>CSV files for logging info from the Microbit, CSV data field formatted as shown below:</li>
+  <pre>
+time (seconds),LightLevel,TempLevel,SoundLevel
+11.679,128,21,128
+25.797,64,45,128
+33.332,128,15,128
+40.841,128,21,128
+48.38,128,21,13
+ </pre>
+  <li><b>Website Report: </b>HTML/CSS for documentation and presentation of the project.</li>
+</ul>
+</div>
+<br>
+<div class="sub_box">
+<h3>Flowchart</h3>
+<img src="flowchart.png" alt="Flowchart" style="height: 25%;" class="centred_image">
+</div>
+<br>
       <div class="sub_box" style="margin : auto";>
         <center>
           <a href="investigation.html">Prev Page</a>
