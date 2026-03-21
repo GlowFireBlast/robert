@@ -33,6 +33,88 @@
  
       <h2>4. Create</h2>
 
+<div class ="sub_box">
+  <h3>Development Process and Key Milestones</h3>
+  <p>The development of my Camping Environment Assistant followed a structured and fairly straightforward process:</p>
+  <ul>
+    <li><b>The Initial Prototype: </b>I began by programming the Micro:bit to successfully read analog sensor data (temperature, light level, and sound level).
+       I also implemented basic digital button controls (A, B, A+B) to trigger different functions.</li>
+       <br>
+    <li><b>Data Logging Implementation: </b>Once sensor readings were reliable, I developed a system to log the data into a CSV file. 
+      This involved formatting the data correctly (time, light, temperature, sound) and ensuring consistency for later processing.</li>
+      <br>
+    <li><b>Python Program Dev: </b>I created this program to: Read and process CSV data, compare logged environmental conditions,
+     incorporate user preferences and determine the most suitable camping conditions.</li>
+     <br>
+     <li><b>"What-if" Scenario Integration: </b>I implemented two "what-if" scenarios (e.g. temperature increase due to drought), 
+      allowing the system to simulate environmental changes and show how they affect optimal camping conditions.</li>
+      <br>
+  </ul>
+</div> 
+<br>
+<div class ="sub_box">
+  <h3>Testing</h3>
+  <p>Testing was continuous and took place at each stage: </p>
+  <ul>
+    <li><b>Sensor Testing: </b>I tested each sensor individually to ensure they all had accurate readings. 
+      For example, I exposed the Micro:bit to different light levels and temperatures to confirm that values changed appropriately.</li>
+    <br>
+    <li><b>Input Testing: </b>I verified that each button and button combination triggered the correct function
+     (e.g, Buttons A+B -> SOS Alert and Buzzer)</li>
+    <br>
+    <li><b>User Testing: </b>I conducted testing with my own friends and family, all potential users,
+       to gather feedback on usability, accessibility and functionality, making slight, but well needed 
+       adjustments based on their input.</li>
+  </ul> 
+</div>
+<br>
+<div class ="sub_box">
+  <h3>Problems and Solutions</h3>
+  <p>One significant problem that I encountered was during the development of the Micro:bit system. The values that were being logged
+  were inconsistent and often incorrect.
+  </p>
+  <ul>
+    <li><b>Cause: </b>After troubleshooting, I discovered that the issue was due to error in how often the sensors
+   logged data. I had set the logging interval too short, which caused the sensors to read and log data before they had stabilized,
+    leading to inaccurate readings.</li>
+    <br>
+    <li><b>Solution: </b> To solve this, I adjusted the programme to log data based on button inputs rather than a fixed time interval, 
+    allowing for more accurate and consistent data collection. This also made the system more user-friendly, 
+    as users could choose when to log data based on their current environment.</li>
+  </ul>
+</div>
+<br>
+<div class ="sub_box">
+  <h3>Model/Algorithm Description</h3>
+  <p>The core of my system is an algorithm that evaluates environmental suitability for 
+    camping based on sensor data and user preferences.</p>
+  <ol>
+    <li><b>Input Collection: </b>The system reads the temperature, light level and sound level from the CSV file.</li>
+    <br>
+    <li><b>Preference Matching: </b>The algorithm compares the current conditions against user-defined preferences 
+      (e.g. ideal temperature range, preferred light level).</li>
+      <br>
+    <li><b>Scoring System: </b>Each environment reading is scored based on how closely it matches the users preferences:
+      <ul>
+        <li>Temperature within preferred range -> higher ranking</li>
+        <li>Light level within preferred range -> higher ranking</li>
+        <li>Sound level within preferred range -> higher ranking</li>
+      </ul>
+      <br>
+      <li><b>Risk Detection: </b> The sstem checks for potentially dangerous conditions (High temperature -> forest fire risk) and 
+        if detected, it triggers an alert and provides safety recommendations.</li>
+        <br>
+    <li><b>Optimal Environment Selection: </b>The system compares all recorded data points and selects the one closest to the user's 
+      preferences as the optimal camping environment.</li>
+      <br>
+    <li><b>"What-if" Scenarios: </b>The algorithm modifies input data to simulate changes such as
+       "What if temperatures increase by 5°C due to drought conditions?". It then outputs the new most optimal environment and detects 
+      the same risks assessed beforehand.</li>
+      <br>
+  </ol>
+<p>Overall, This implementation demonstrates both the embedded system (Micro:bit) and the adaptive system (Python) 
+  working together to solve a real world problem, while also incorporating testing and problem-solving.</p>
+</div>
       <div class="sub_box" style="margin : auto";>
         <center>
           <a href="design.html">Prev Page</a>
